@@ -11,12 +11,12 @@ def length(list):
         index += 1 
     return index 
 
-def search(index,data,column):
+def search(input_data,data,column):
     x = 0
     for i in range (length(data)):
-        if index != data[i][column]:
+        if input_data != data[i][column]:
             x += 1
-        elif index == data[i][column]:
+        elif input_data == data[i][column]:
             break
     return x
 
